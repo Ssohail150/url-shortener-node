@@ -127,7 +127,7 @@ async function loadRecentURLs() {
           <td class="py-3">
 
             <a
-              href="/${url.shortCode}"
+              href="/r/${url.shortCode}"
               target="_blank"
               class="text-green-400"
             >
