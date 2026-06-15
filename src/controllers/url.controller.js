@@ -9,7 +9,7 @@ export const createURL = async (req, res) => {
     const result = await urlService.createShortURL(url);
 
     res.json({
-      short_url: `${process.env.BASE_URL}/${result.shortCode}`,
+      short_url: `${process.env.BASE_URL}/r/${result.shortCode}`,
     });
   } catch (err) {
     res.status(400).json({
